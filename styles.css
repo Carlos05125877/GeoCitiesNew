@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #5373C6;
+    --secondary-color: #6ACC70;
+    --accent-color: #7595e8;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.logo-letter {
+    font-size: 4rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.logo-letter:hover {
+    transform: scale(1.1);
+}
+
+.logo-o {
+    color: var(--primary-color);
+}
+
+.logo-cities {
+    color: var(--secondary-color);
+}
+
+.logo-org {
+    color: #a7b5b5;
+}
+
+.search-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.search-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.content-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.neighborhood-list {
+    list-style: none;
+    padding: 0;
+}
+
+.neighborhood-list li {
+    margin-bottom: 0.5rem;
+}
+
+.neighborhood-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.neighborhood-list a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stats-table th, .stats-table td {
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.stats-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .logo-letter {
+        font-size: 3rem;
+    }
+    
+    .content-card {
+        padding: 1rem;
+    }
+} 
